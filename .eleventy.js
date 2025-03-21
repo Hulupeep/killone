@@ -2,7 +2,6 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("content/*.png"); // Ensure PNG images are copied
   eleventyConfig.addPassthroughCopy("content/*.jpg"); // In case you switch formats
   eleventyConfig.addPassthroughCopy("content/*.webp"); // Supports WebP for optimization
-   eleventyConfig.addPassthroughCopy({"content/killonelogosmall.png": "killonelogosmall.png"});
 
   return {
     dir: {
