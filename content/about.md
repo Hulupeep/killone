@@ -9,7 +9,7 @@ The Killone Group Water Scheme serves the community in the parish of Clarecastle
 
 We are dedicated to providing high-quality water services to our members.
 
-![Killone Logo](/killonelogo.png) 
+![Killone Logo](killonelogo.png) 
 
 ## Group Water Schemes in Ireland
 
