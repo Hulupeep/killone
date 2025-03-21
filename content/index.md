@@ -3,7 +3,7 @@ title: Welcome to Killone Group Water Scheme
 layout: base.html
 ---
 
-# Kilone Group Water Scheme
+# Killone Group Water Scheme
 The Killone Group Water Scheme provides clean, reliable water to the community of Clarecastle & Ballyea Parish.
 
 We serve over 400 households, farms, and businesses.
