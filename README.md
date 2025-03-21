@@ -1,5 +1,4 @@
  
-```markdown
 # Killone Group Water Scheme Website
 
 This repository contains the website content for the Killone Group Water Scheme, serving the community in County Clare.
