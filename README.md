@@ -62,7 +62,7 @@ Markdown is easy to use for formatting:
 
 ---
 
-## Recommended Markdown Editors (Optional)
+## Optional -  Markdown Editors  
 You don't need one but a more integrated flow is possible using git which pulls the content to your PC, edit with typora, then commit back up. No browsing to github needed.
 
 - [Typora](https://typora.io) *(User-friendly, visual editor recommended for beginners)*
