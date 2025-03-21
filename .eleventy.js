@@ -1,15 +1,11 @@
 module.exports = function(eleventyConfig) {
-  // Ensure images are copied correctly
-  eleventyConfig.addPassthroughCopy("content/*.png"); 
-  eleventyConfig.addPassthroughCopy("content/*.jpg"); 
-  eleventyConfig.addPassthroughCopy("content/*.webp");
-
+    eleventyConfig.addPassthroughCopy("content/*.png");
   return {
     dir: {
-      input: "content",        // ✅ Keep markdown files here
-      output: "_site",         // ✅ Output files go here
-      includes: "_includes",   // ✅ Eleventy looks here for layouts/partials
-      layouts: "_includes"     // ✅ Layouts should also be in `_includes`
+      input: "content",       // Markdown files directory
+      output: "_site",        // Output built files here
+      includes: "../_includes", // Layout and partial includes directory
+      layouts: "../_includes" // Layout files
     }
   };
 };
