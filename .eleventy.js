@@ -1,4 +1,8 @@
 module.exports = function(eleventyConfig) {
+  eleventyConfig.addCollection("content", function(collectionApi) {
+    return collectionApi.getFilteredByGlob("./content/*.md");
+  });
+
   return {
     dir: {
       input: ".",
