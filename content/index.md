@@ -9,4 +9,4 @@ We serve over 400 households, farms, and businesses.
 
 To get in touch, see our [**contact page**](/contact/).
 
-![Killone Water Scheme](/killonews.png)
+![Killone Water Scheme](killonews.png)
