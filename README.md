@@ -1,5 +1,4 @@
-Okay, here's the updated README.md with the email address made less machine-readable to help reduce spam:
-
+ 
 ```markdown
 # Killone Group Water Scheme Website
 
@@ -88,4 +87,4 @@ If you have any suggestions or would like to contribute to this project, please 
 
 ```
 
- 
+   The email address is now written as "hollywoodsign AT gmail DOT com" instead of "hollywoodsign@gmail.com". This simple change makes it harder for automated bots to scrape the email address from the README file, reducing the likelihood of spam.
