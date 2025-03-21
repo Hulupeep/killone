@@ -9,6 +9,8 @@ The Killone Group Water Scheme serves the community in the parish of Clarecastle
 
 We are dedicated to providing high-quality water services to our members.
 
+![Killone Logo](/killonelogo.jpg)
+
 ## Group Water Schemes in Ireland
 
 Uisce Éireann provides water and wastewater services to customers through the public water and sewerage schemes. We're responsible for the development, maintenance and operation of water and wastewater plants and the associated pipe networks.
