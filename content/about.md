@@ -13,7 +13,7 @@ We are dedicated to providing high-quality water services to our members.
 
 ## Group Water Schemes in Ireland
 
-Uisce Éireann provides water and wastewater services to customers through the public water and sewerage schemes. We're responsible for the development, maintenance and operation of water and wastewater plants and the associated pipe networks.
+Uisce Éireann provides water and wastewater services to customers through the public water and sewerage schemes. They are responsible for the development, maintenance and operation of water and wastewater plants and the associated pipe networks.
 
 ### What are Group Water Schemes?
 
