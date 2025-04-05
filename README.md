@@ -1,100 +1,132 @@
-# Killone Group Water Scheme Website
-
-This repository contains the content for the Killone Group Water Scheme website, serving the Clarecastle & Ballyea Parish community in County Clare.
-
-## About Killone Group Water Scheme
-
-We provide clean, reliable water services to over 400 households, farms, and businesses in our local community.
+Here’s a detailed and developer-friendly `README.md` section that documents exactly how to **clone and launch a new markdown-driven 11ty site on Vercel**, including image naming conventions for smooth GPT-assisted generation:
 
 ---
 
-## 🎉 How to Update the Website (For Editors)
+```markdown
+# 🚀 TabStax Markdown Site Template
 
-You don't need technical skills to update our website. It's straightforward and easy to use:
+This project is a lightweight **11ty (Eleventy)** static site generator setup powered by Markdown files, designed to be deployed instantly via **Vercel**.
 
-### 1. Request Access
-- Send an email to hollywoodsign AT gmail DOT com requesting access.
-- You'll receive a GitHub invitation. Click **"Accept"** to get started.
-
-### 2. Editing Content
-- Go to [https://github.com/hulupeep/killone](https://github.com/hulupeep/killone).
-- Click the `content` folder. Each webpage corresponds to a Markdown (`.md`) file (`index.md`, `about.md`, etc.).
-- Click the file you'd like to edit, then click the pencil icon ✏️.
-- Make your changes directly in your browser.
-- Scroll down, write a brief description of your changes, and click **Commit changes**.
-
-The website will update automatically within a few minutes.
+Perfect for launching focused, content-first landing pages or documentation-style sites with minimal effort.
 
 ---
 
-## 📚 Quick Markdown Guide
+## 🧱 Project Structure
 
-Markdown is easy to use for formatting:
-
-- **Headings**: Add `#` before your heading:
-  ```markdown
-  # Big Heading
-  ## Subheading
-  ### Smaller Heading
-  ```
-
-- **Paragraphs**: Just type your text. Leave a blank line between paragraphs.
-
-- **Bold**: Put two asterisks before and after:  
-  `**bold text**`
-
-- **Italics**: Put one asterisk before and after:  
-  `*italic text*`
-
-- **Links**:
-  `[Link Text](https://example.com)`
-
-- **Images**:
-  Upload the image into the `content` folder and include it like this:  
-  `![Image description](/image.png)`  
-  Replace `image.png` with your image filename.
-
-- **Lists**: Use dashes for bullet points:
-  ```markdown
-  - Item one
-  - Item two
-  ```
+- `content/` – All your Markdown content and static images (logo, screenshots)
+- `_includes/` – Layout templates (like `base.njk`)
+- `.eleventy.js` – Eleventy config (handles image passthrough + folder structure)
+- `package.json` – Run scripts and dependencies
 
 ---
 
-## Optional -  Markdown Editors  
-You don't need one but a more integrated flow is possible using git which pulls the content to your PC, edit with typora, then commit back up. No browsing to github needed.
+## ✅ How to Clone & Launch a New Site
 
-- [Typora](https://typora.io) *(User-friendly, visual editor recommended for beginners)*
-- [MarkText](https://marktext.app) *(Free, simple alternative)*
-- [VS Code](https://code.visualstudio.com) *(Advanced users)*
-
----
-
-## Technical Details (For Developers)
-
-- **Framework**: Built with [Eleventy (11ty)](https://11ty.dev/), a static site generator.
-- **Content**: Markdown files (`.md`) in the `content` folder.
-- **Hosting & Deployment**: Automatically deployed via [Vercel](https://vercel.com) upon changes committed to the `main` branch.
-
-### Developer Setup
+1. **Clone this template**
 
 ```bash
-git clone https://github.com/hulupeep/killone.git
-npm install
-npm run build
+git clone https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
+cd YOUR_REPO_NAME
 ```
 
-To preview locally:
+2. **Create Your Markdown Files**
+
+Inside the `content/` folder, create:
+
+- `index.md` – This becomes your homepage
+- Any other `.md` files for subpages
+
+Each file uses frontmatter to define its layout:
+
+```markdown
+---
+title: TabStax
+layout: base
+---
+```
+
+3. **Generate and Upload Images**
+
+Use ChatGPT or your preferred image tool to generate assets:
+
+- Logos:  
+  - `logosmall.png` (for favicons or nav)  
+  - `logomed.png` (default site logo)  
+  - `logolarge.png` (hero or big display)
+
+- Screenshots:  
+  - `screenshot.png`  
+  - `screenshot1.png`, `screenshot2.png` (optional extras)
+
+**Save these in the `content/` folder** – they’ll be copied to the root of your deployed site.
+
+4. **Push to GitHub**
+
 ```bash
-npm run start
+git add .
+git commit -m "Initial site setup"
+git push origin main
 ```
 
-- Open your browser at [http://localhost:8080](http://localhost:8080)
+5. **Deploy via Vercel**
+
+- Go to [vercel.com](https://vercel.com)
+- Click **"Add New Project"**
+- Import your GitHub repo
+- Under **Settings → Framework**, set:
+
+```
+Framework Preset:      Eleventy
+Build Command:         npm run build
+Output Directory:      _site
+Install Command:       npm install
+```
+
+Click **Deploy**. Your site will be live in seconds.
 
 ---
 
-## Contributing
+## ✨ Customizations
 
-Feedback and contributions are welcome! Feel free to open an issue or submit a pull request.
+- Update the `index.md` value prop and layout
+- Add new `.md` pages (they’ll become standalone URLs)
+- Extend layouts in `_includes/`
 
+---
+
+## 🛠 Dev Scripts
+
+```bash
+npm install       # One-time setup
+npm run dev       # Local preview
+npm run build     # Generate site in _site/
+```
+
+---
+
+## 📦 Eleventy Config Notes
+
+In `.eleventy.js`, we handle passthrough for your image assets:
+
+```js
+eleventyConfig.addPassthroughCopy({ "content/*.png": "/" });
+```
+
+This means `/content/logosmall.png` becomes available at `/logosmall.png` in production.
+
+---
+
+## 🧠 Why This Setup?
+
+This template is built for:
+
+- **Speed**: Launch markdown-driven sites in under 10 mins
+- **Clarity**: Clean image naming for GPT workflows
+- **Portability**: Works across browsers and devices instantly
+- **Neurodiverse & Busy Builders**: Minimal complexity, maximum output
+
+---
+
+```
+
+Want me to generate the `base.njk` layout next? Or prep this README for direct copy into your repo?
